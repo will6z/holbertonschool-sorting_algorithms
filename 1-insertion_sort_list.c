@@ -1,7 +1,7 @@
 #include "sort.h"
 /**
  * insertion_sort_list - sorts a doubly linked lists of ints
- * 
+ *
  * @list: pointer
  */
 void insertion_sort_list(listint_t **list)
