@@ -5,7 +5,6 @@
  * bubble_sort - sorts array of ints
  * @array: input
  * @size: input
- * @swap: input
  * Return: 0
  */
 void bubble_sort(int *array, size_t size)
