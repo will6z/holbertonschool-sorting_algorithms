@@ -9,7 +9,8 @@
  * @n: int
  * @prev: Pointer to the previous element
  * @next: Pointer to the next element
- */
+**/
+
 typedef struct listint_s
 {
 	const int n;
