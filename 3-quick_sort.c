@@ -23,14 +23,16 @@ void lomuto_quick_sort(int *array, int low, int high, size_t size)
     if (low < high)
     {
         int i = low - 1;
+        int pi;
         recursive_partition(array, low, high, &i, size);
-        int pi = i + 1;
+        pi = i + 1;
         swap(&array[pi], &array[high], array, size);
 
         lomuto_quick_sort(array, low, pi - 1, size);
         lomuto_quick_sort(array, pi + 1, high, size);
     }
 }
+
 
 void recursive_partition(int *array, int low, int high, int *i, size_t size)
 {
