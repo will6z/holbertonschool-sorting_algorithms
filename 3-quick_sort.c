@@ -6,7 +6,8 @@ void recursive_partition(int *array, int low, int high, int *i, size_t size);
 void swap(int *a, int *b, int *array, size_t size);
 
 /**
- * quick_sort - sorts an array in ascending order using the Quick sort algorithm
+ * quick_sort - sorts an array in ascending order using
+ * the Quick sort algorithm
  * @array: array to sort
  * @size: size of the array
  */
@@ -26,7 +27,6 @@ void lomuto_quick_sort(int *array, int low, int high, size_t size)
 		int pi;
 
 		recursive_partition(array, low, high, &i, size);
-		
 		pi = i + 1;
 		swap(&array[pi], &array[high], array, size);
 
